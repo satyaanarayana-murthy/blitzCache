@@ -12,7 +12,7 @@ public interface Cache<K, V> {
 
     void putAll(Map<K, V> cacheMap);
 
-    V getUnchecked(K key);
+    V getIfPresent(K key);
 
     boolean containsKey(K key);
 
